@@ -11,6 +11,10 @@ public class Sum {
 		System.out.println("두 수를 입력하세요.");
 		i = scan.nextInt();
 		j = scan.nextInt();
-		System.out.println("두 수의 합은 "+(i+j)+"입니다.");
+		//System.out.println("두 수의 합은 "+(i+j)+"입니다.");
+		System.out.printf("%d와 %d 두 수의 합은 %d입니다.",i,j,i+j);
+		
+		//Scanner 클래스 종료
+		scan.close();
 	}
 }
