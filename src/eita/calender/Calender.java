@@ -24,14 +24,18 @@ public class Calender {
 	public static void main(String[] args) {
 				
 		//숫자를 입력받아 해당하는 달의 최대 일수를 출력하는 프로그램
+		
+		String PROMPT = "cal> ";
 		Scanner scan = new Scanner(System.in);
 		Calender cal = new Calender();
 		
-		System.out.println("반복 횟수를 입력하세요.");
+		//for문을 이용한 반복 진행
+		System.out.print("반복 횟수를 입력하세요 : ");
 		int repeat = scan.nextInt();
 		
 		for(int i=0 ; i<repeat ; i++) {
 			System.out.println("월을 입력하세요 : ");
+			System.out.print(PROMPT);
 			int month = scan.nextInt();
 			System.out.printf("%d월은 %d일까지 있습니다.\n", month, cal.getMaxDaysOfMonth(month));
 		}
