@@ -23,21 +23,6 @@ public class Calender {
 		}
 	}
 	
-	//시작하는 요일을 받아 숫자로 리턴해주는 함수
-	public int startDay(String day) {
-		if(day.equals("SUN")) return 7;
-		else if(day.equals("MON")) return 1;
-		else if(day.equals("TUE")) return 2;
-		else if(day.equals("WED")) return 3;
-		else if(day.equals("THU")) return 4;
-		else if(day.equals("FRI")) return 5;
-		else if(day.equals("SAT")) return 6;
-		else {
-			System.out.println("잘못입력하셨습니다.");
-			return 0;
-		}
-	}
-	
 	//자동으로 첫번째 요일 계산 함수(1970년1월1일 목요일기준)
 	public int getWeekDay(int year, int month) {
 		int syear = 1970;
